@@ -8,21 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		495BFB33281971A900BCE7E2 /* RealmAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495BFB32281971A900BCE7E2 /* RealmAppApp.swift */; };
-		495BFB35281971A900BCE7E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495BFB34281971A900BCE7E2 /* ContentView.swift */; };
+		495BFB35281971A900BCE7E2 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495BFB34281971A900BCE7E2 /* TodoListView.swift */; };
 		495BFB37281971AA00BCE7E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495BFB36281971AA00BCE7E2 /* Assets.xcassets */; };
 		495BFB3A281971AA00BCE7E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495BFB39281971AA00BCE7E2 /* Preview Assets.xcassets */; };
 		495BFB412819740900BCE7E2 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495BFB402819740900BCE7E2 /* Launch Screen.storyboard */; };
 		4998E8E0281978FF00CC3E3A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4998E8DF281978FF00CC3E3A /* Realm */; };
 		4998E8E2281978FF00CC3E3A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4998E8E1281978FF00CC3E3A /* RealmSwift */; };
+		49A8F9FE2819840D009EEA30 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A8F9FD2819840D009EEA30 /* Todo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		495BFB2F281971A900BCE7E2 /* RealmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495BFB32281971A900BCE7E2 /* RealmAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAppApp.swift; sourceTree = "<group>"; };
-		495BFB34281971A900BCE7E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		495BFB34281971A900BCE7E2 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		495BFB36281971AA00BCE7E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		495BFB39281971AA00BCE7E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		495BFB402819740900BCE7E2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		49A8F9FD2819840D009EEA30 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +61,7 @@
 			children = (
 				49A8F9FC281983AD009EEA30 /* Models */,
 				495BFB32281971A900BCE7E2 /* RealmAppApp.swift */,
-				495BFB34281971A900BCE7E2 /* ContentView.swift */,
+				495BFB34281971A900BCE7E2 /* TodoListView.swift */,
 				495BFB36281971AA00BCE7E2 /* Assets.xcassets */,
 				495BFB38281971AA00BCE7E2 /* Preview Content */,
 				495BFB402819740900BCE7E2 /* Launch Screen.storyboard */,
@@ -78,6 +80,7 @@
 		49A8F9FC281983AD009EEA30 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				49A8F9FD2819840D009EEA30 /* Todo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -160,7 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				495BFB35281971A900BCE7E2 /* ContentView.swift in Sources */,
+				495BFB35281971A900BCE7E2 /* TodoListView.swift in Sources */,
+				49A8F9FE2819840D009EEA30 /* Todo.swift in Sources */,
 				495BFB33281971A900BCE7E2 /* RealmAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
