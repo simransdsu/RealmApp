@@ -36,13 +36,18 @@ struct TodoListView: View {
                 .padding()
                 
                 List() {
-                    ForEach(todos) { todo in
+                    ForEach(todos.sorted(by: [
+                        SortDescriptor(keyPath: "completed"),
+                        SortDescriptor(keyPath: "urgency")
+                    ])) { todo in
                         TodoListRow(todo: todo)
                     }
-                    .onDelete(perform: $todos.remove)
+//                    .onDelete(perform: $todos.remove)
                     .listRowSeparator(.hidden)
                 }.listStyle(.plain)
-            }.navigationTitle("Realm Todos")
+            }
+            .animation(.default, value: todos)
+            .navigationTitle("Realm Todos")
         }
     }
 }
