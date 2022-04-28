@@ -37,7 +37,7 @@ struct TodoListView: View {
                 
                 List() {
                     ForEach(todos) { todo in
-                        Text(todo.name)
+                        TodoListRow(todo: todo)
                     }.listRowSeparator(.hidden)
                 }.listStyle(.plain)
             }.navigationTitle("Realm Todos")
