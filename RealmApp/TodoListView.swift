@@ -12,6 +12,7 @@ struct TodoListView: View {
     
     @ObservedResults(Todo.self) var todos
     @State private var name: String = ""
+    @State private var searchFilter: String = ""
     @FocusState private var focus: Bool?
     
     var body: some View {
@@ -47,6 +48,15 @@ struct TodoListView: View {
                 }.listStyle(.plain)
             }
             .animation(.default, value: todos)
+            .searchable(text: $searchFilter,
+                        collection: $todos,
+                        keyPath: \.name,
+                        prompt: "Search here") {
+                ForEach(todos) { todo in
+                    Text(todo.name)
+                        .searchCompletion(todo.name)
+                }
+            }
             .navigationTitle("Realm Todos")
         }
     }
