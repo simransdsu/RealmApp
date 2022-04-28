@@ -38,7 +38,9 @@ struct TodoListView: View {
                 List() {
                     ForEach(todos) { todo in
                         TodoListRow(todo: todo)
-                    }.listRowSeparator(.hidden)
+                    }
+                    .onDelete(perform: $todos.remove)
+                    .listRowSeparator(.hidden)
                 }.listStyle(.plain)
             }.navigationTitle("Realm Todos")
         }
