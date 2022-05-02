@@ -16,6 +16,10 @@
 		4998E8E0281978FF00CC3E3A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4998E8DF281978FF00CC3E3A /* Realm */; };
 		4998E8E2281978FF00CC3E3A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4998E8E1281978FF00CC3E3A /* RealmSwift */; };
 		49A8F9FE2819840D009EEA30 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A8F9FD2819840D009EEA30 /* Todo.swift */; };
+		49B4A8E3281F6E1100C3BDA5 /* CountriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B4A8E2281F6E1100C3BDA5 /* CountriesListView.swift */; };
+		49B4A8E6281F6E3600C3BDA5 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B4A8E5281F6E3600C3BDA5 /* Country.swift */; };
+		49B4A8E8281F6E8200C3BDA5 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B4A8E7281F6E8200C3BDA5 /* City.swift */; };
+		49B4A8EB281F73DD00C3BDA5 /* CountryRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B4A8EA281F73DD00C3BDA5 /* CountryRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		495BFB402819740900BCE7E2 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4967A3FC281AE63F00E62BCD /* TodoListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListRow.swift; sourceTree = "<group>"; };
 		49A8F9FD2819840D009EEA30 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		49B4A8E2281F6E1100C3BDA5 /* CountriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListView.swift; sourceTree = "<group>"; };
+		49B4A8E5281F6E3600C3BDA5 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		49B4A8E7281F6E8200C3BDA5 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		49B4A8EA281F73DD00C3BDA5 /* CountryRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +69,9 @@
 		495BFB31281971A900BCE7E2 /* RealmApp */ = {
 			isa = PBXGroup;
 			children = (
-				4967A3FB281AE63500E62BCD /* Views */,
-				49A8F9FC281983AD009EEA30 /* Models */,
+				49B4A8E1281F6DF900C3BDA5 /* CountriesCityApp */,
+				49B4A8E0281F6DE700C3BDA5 /* TodoApp */,
 				495BFB32281971A900BCE7E2 /* RealmAppApp.swift */,
-				495BFB34281971A900BCE7E2 /* TodoListView.swift */,
 				495BFB36281971AA00BCE7E2 /* Assets.xcassets */,
 				495BFB38281971AA00BCE7E2 /* Preview Content */,
 				495BFB402819740900BCE7E2 /* Launch Screen.storyboard */,
@@ -94,6 +101,43 @@
 				49A8F9FD2819840D009EEA30 /* Todo.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		49B4A8E0281F6DE700C3BDA5 /* TodoApp */ = {
+			isa = PBXGroup;
+			children = (
+				4967A3FB281AE63500E62BCD /* Views */,
+				49A8F9FC281983AD009EEA30 /* Models */,
+				495BFB34281971A900BCE7E2 /* TodoListView.swift */,
+			);
+			path = TodoApp;
+			sourceTree = "<group>";
+		};
+		49B4A8E1281F6DF900C3BDA5 /* CountriesCityApp */ = {
+			isa = PBXGroup;
+			children = (
+				49B4A8E9281F6EC400C3BDA5 /* Views */,
+				49B4A8E4281F6E2D00C3BDA5 /* Models */,
+			);
+			path = CountriesCityApp;
+			sourceTree = "<group>";
+		};
+		49B4A8E4281F6E2D00C3BDA5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49B4A8E5281F6E3600C3BDA5 /* Country.swift */,
+				49B4A8E7281F6E8200C3BDA5 /* City.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49B4A8E9281F6EC400C3BDA5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49B4A8E2281F6E1100C3BDA5 /* CountriesListView.swift */,
+				49B4A8EA281F73DD00C3BDA5 /* CountryRowView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +221,11 @@
 				495BFB35281971A900BCE7E2 /* TodoListView.swift in Sources */,
 				49A8F9FE2819840D009EEA30 /* Todo.swift in Sources */,
 				4967A3FD281AE63F00E62BCD /* TodoListRow.swift in Sources */,
+				49B4A8E6281F6E3600C3BDA5 /* Country.swift in Sources */,
 				495BFB33281971A900BCE7E2 /* RealmAppApp.swift in Sources */,
+				49B4A8E3281F6E1100C3BDA5 /* CountriesListView.swift in Sources */,
+				49B4A8EB281F73DD00C3BDA5 /* CountryRowView.swift in Sources */,
+				49B4A8E8281F6E8200C3BDA5 /* City.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

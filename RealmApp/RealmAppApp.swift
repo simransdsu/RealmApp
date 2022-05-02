@@ -11,7 +11,8 @@ import SwiftUI
 struct RealmAppApp: App {
     var body: some Scene {
         WindowGroup {
-            TodoListView()
+//            TodoListView()
+            CountriesListView()
                 .onAppear {
                     print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.path ?? "No Path available")
                     UserDefaults.standard.set(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
