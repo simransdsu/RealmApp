@@ -23,7 +23,9 @@ struct CountriesListView: View {
                     
                     List {
                         ForEach(countries.sorted(byKeyPath: "name")) { country in
-                            CountryRowView(country: country)
+                            NavigationLink(destination: CitiesView(country: country)) {
+                                CountryRowView(country: country)
+                            }
                         }
                         .listRowSeparator(.hidden)
                     }

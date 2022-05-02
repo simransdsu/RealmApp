@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491E798728202DCC0029ACA6 /* CitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491E798628202DCC0029ACA6 /* CitiesView.swift */; };
 		495BFB33281971A900BCE7E2 /* RealmAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495BFB32281971A900BCE7E2 /* RealmAppApp.swift */; };
 		495BFB35281971A900BCE7E2 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495BFB34281971A900BCE7E2 /* TodoListView.swift */; };
 		495BFB37281971AA00BCE7E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495BFB36281971AA00BCE7E2 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		491E798628202DCC0029ACA6 /* CitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesView.swift; sourceTree = "<group>"; };
 		495BFB2F281971A900BCE7E2 /* RealmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		495BFB32281971A900BCE7E2 /* RealmAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAppApp.swift; sourceTree = "<group>"; };
 		495BFB34281971A900BCE7E2 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				49B4A8E2281F6E1100C3BDA5 /* CountriesListView.swift */,
 				49B4A8EA281F73DD00C3BDA5 /* CountryRowView.swift */,
+				491E798628202DCC0029ACA6 /* CitiesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				49B4A8E3281F6E1100C3BDA5 /* CountriesListView.swift in Sources */,
 				49B4A8EB281F73DD00C3BDA5 /* CountryRowView.swift in Sources */,
 				49B4A8E8281F6E8200C3BDA5 /* City.swift in Sources */,
+				491E798728202DCC0029ACA6 /* CitiesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
