@@ -11,7 +11,6 @@ import RealmSwift
 struct CountriesListView: View {
     
     @ObservedResults(Country.self) var countries
-//    @FocusState private var isFocused: Bool?
     
     var body: some View {
         NavigationView {
@@ -23,7 +22,7 @@ struct CountriesListView: View {
                 } else {
                     
                     List {
-                        ForEach(countries) { country in
+                        ForEach(countries.sorted(byKeyPath: "name")) { country in
                             CountryRowView(country: country)
                         }
                         .listRowSeparator(.hidden)
@@ -33,7 +32,9 @@ struct CountriesListView: View {
                     
                 }
                 Spacer()
-            }.navigationTitle("Countries")
+            }
+            .animation(.default, value: countries)
+            .navigationTitle("Countries")
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button {
@@ -43,18 +44,6 @@ struct CountriesListView: View {
                                 .font(.title2)
                         }
                     }
-                    
-//                    ToolbarItemGroup(placement: .keyboard) {
-//                        HStack {
-//                            Spacer()
-//                            Button {
-//                                isFocused = nil
-//                            } label: {
-//                                Image(systemName: "keyboard.chevron.compact.down")
-//                            }
-//
-//                        }
-//                    }
                 }
         }
     }
