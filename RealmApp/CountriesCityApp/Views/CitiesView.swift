@@ -33,12 +33,18 @@ struct CitiesView: View {
                 ForEach(country.cities) { city in
                     Text(city.name)
                 }.onDelete(perform: $country.cities.remove)
+                    .onMove(perform: $country.cities.move)
                     .listRowSeparator(.hidden)
             }
             .listStyle(.plain)
         }
         .navigationTitle(Text(country.name))
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                EditButton()
+            }
+        }
     }
 }
 
