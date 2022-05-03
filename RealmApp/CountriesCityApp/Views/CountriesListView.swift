@@ -12,6 +12,8 @@ struct CountriesListView: View {
     
     @ObservedResults(Country.self) var countries
     
+//    @State private var presentAlert = false
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -27,6 +29,7 @@ struct CountriesListView: View {
                                 CountryRowView(country: country)
                             }
                         }
+                        .onDelete(perform: deleteCountry)
                         .listRowSeparator(.hidden)
                     }
                     
@@ -48,6 +51,21 @@ struct CountriesListView: View {
                     }
                 }
         }
+//        .alert("You must first delete all of the cities in this country first", isPresented: $presentAlert) { }
+    }
+    
+    
+    private func deleteCountry(indexSet: IndexSet) {
+        guard let index = indexSet.first else { return }
+        let selectedCountry = Array(countries.sorted(byKeyPath: "name"))[index]
+        
+        guard selectedCountry.cities.isEmpty else {
+            
+//            presentAlert.toggle()
+            return
+        }
+        
+        $countries.remove(selectedCountry)
     }
 }
 
